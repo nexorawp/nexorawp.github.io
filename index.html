@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexora — Universal WordPress magazine theme</title>
+  <meta name="description" content="Nexora is a lightweight WordPress magazine theme: niche color presets, AdSense, affiliate tools, and GitHub-based updates. No page builder.">
+  <meta property="og:title" content="Nexora — Universal WordPress magazine theme">
+  <meta property="og:description" content="Magazine layout, niche colors only, AdSense + affiliate ready. Updates from GitHub Releases.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-mark-112.png">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="./">
+        <img src="assets/logo-mark.svg" width="28" height="28" alt="">
+        Nexora
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#updates">Updates</a>
+        <a href="https://paulworld.site/" target="_blank" rel="noopener noreferrer">Live demo</a>
+        <a class="btn btn--primary" href="https://github.com/sanjaypaul-777/nexora" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="kicker">WordPress magazine theme</p>
+          <h1>Nexora</h1>
+          <p class="hero__lede">
+            A lean classic theme for niche magazines — colors switch with the niche,
+            layout stays editorial. AdSense, affiliate cards, SEO handoff to Yoast, and one-click updates from GitHub Releases.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://paulworld.site/" target="_blank" rel="noopener noreferrer">See live demo</a>
+            <a class="btn btn--ghost" href="#updates">How updates work</a>
+          </div>
+        </div>
+        <aside class="hero__panel" aria-labelledby="install-title">
+          <h2 id="install-title">Install in minutes</h2>
+          <p>Upload the theme zip, activate Nexora, then set Site Identity and your menus.</p>
+          <ol>
+            <li>Install <code>nexora/</code> under <code>wp-content/themes/</code></li>
+            <li>Activate under Appearance → Themes</li>
+            <li>Paste your update token under Appearance → Nexora → Advanced</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Built for operators, not page builders</h2>
+          <p>No jQuery from the theme. No fake stats. Magazine first — Paul World on paulworld.site is the reference live site.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature">
+            <h3>Magazine layout</h3>
+            <p>Latest posts homepage, dual-rail singles, TOC, share, and category browse that stay readable on phone and desktop.</p>
+          </article>
+          <article class="feature">
+            <h3>Niche = colors</h3>
+            <p>Presets change presentation tokens only. Posts, SEO, ads, and site name stay untouched when you switch niches.</p>
+          </article>
+          <article class="feature">
+            <h3>Revenue ready</h3>
+            <p>AdSense slots, affiliate CTAs, disclosure footer, and optional GSC / Bing verification fields under Nexora → SEO.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="updates">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Updates without a license server</h2>
+          <p>Releases ship as <code>nexora-*.zip</code> on GitHub. Your purchase email includes the private-repo token — paste it in the theme; no extra VPS required.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <h3>Get the token</h3>
+            <p>Copy the GitHub update token from your Nexora purchase / license email. A random PAT you invent will not see the private repo.</p>
+          </article>
+          <article class="step">
+            <h3>Paste in WordPress</h3>
+            <p>Appearance → Nexora → Advanced → paste token → Save. Optional: the same value as <code>NEXORA_GITHUB_TOKEN</code> in wp-config.php.</p>
+          </article>
+          <article class="step">
+            <h3>Update when ready</h3>
+            <p>Check GitHub updates in Advanced, then Appearance → Themes → Update when a newer release exists.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Start with the live magazine</h2>
+          <p>paulworld.site runs Nexora in production. Use it to judge speed, layout, and editorial tone before you install.</p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://paulworld.site/" target="_blank" rel="noopener noreferrer">Open paulworld.site</a>
+          <a class="btn btn--ghost" href="https://github.com/sanjaypaul-777/nexora/releases" target="_blank" rel="noopener noreferrer">View releases</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>© <span id="y"></span> Nexora · Operator Sanjay Paul</p>
+      <p>
+        <a href="https://github.com/sanjaypaul-777/nexora" target="_blank" rel="noopener noreferrer">Repository</a>
+        ·
+        <a href="mailto:contact@paulworld.site">contact@paulworld.site</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
