@@ -191,7 +191,7 @@ code {
 /* —— Hero —— */
 .hero {
   position: relative;
-  padding: 56px 0 32px;
+  padding: var(--section-gap) 0;
   overflow: clip;
 }
 
@@ -712,7 +712,7 @@ code {
   }
 
   .hero {
-    padding: 36px 0 32px;
+    padding: var(--section-gap) 0;
   }
 
   .hero h1 {
