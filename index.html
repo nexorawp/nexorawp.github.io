@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=head-center">
+  <link rel="stylesheet" href="styles.css?v=faq-toggle">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -319,19 +319,19 @@
         </div>
         <div class="faq">
           <details open>
-            <summary>Is Nexora really free?</summary>
+            <summary aria-expanded="true">Is Nexora really free?</summary>
             <p>Yes. Download <code>nexora-2.0.0-nexora.zip</code> and use the full theme package. Magazine layout, SEO, responsive design, AdSense, and affiliate features ship included.</p>
           </details>
           <details>
-            <summary>Magazine, blog, or authority site — which fits?</summary>
+            <summary aria-expanded="false">Magazine, blog, or authority site — which fits?</summary>
             <p>All three. Use it as a magazine front, a focused niche blog, or an authority content site. Site Identity and niche color presets adapt presentation without rebuilding the theme.</p>
           </details>
           <details>
-            <summary>Does it include AdSense and affiliate monetization?</summary>
+            <summary aria-expanded="false">Does it include AdSense and affiliate monetization?</summary>
             <p>Yes. Configure AdSense placements and affiliate CTAs under Appearance → Nexora. Disclosure support helps keep monetization visible and organized.</p>
           </details>
           <details>
-            <summary>Do I need Elementor or other builders?</summary>
+            <summary aria-expanded="false">Do I need Elementor or other builders?</summary>
             <p>No. Nexora is a classic lightweight theme — faster to maintain than a builder stack for editorial sites.</p>
           </details>
         </div>
@@ -370,6 +370,14 @@
 
   <script>
     document.getElementById('y').textContent = String(new Date().getFullYear());
+    document.querySelectorAll('.faq details').forEach(function (item) {
+      var summary = item.querySelector('summary');
+      if (!summary) return;
+      summary.setAttribute('aria-expanded', item.open ? 'true' : 'false');
+      item.addEventListener('toggle', function () {
+        summary.setAttribute('aria-expanded', item.open ? 'true' : 'false');
+      });
+    });
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.querySelectorAll('.section, .rail article, .steps li, .feature-row, .faq details, .proof').forEach(function (el, i) {
         el.style.setProperty('--d', (i % 6) * 40 + 'ms');

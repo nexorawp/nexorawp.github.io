@@ -640,6 +640,8 @@ code {
   min-height: 56px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   font-size: 16px;
   font-weight: 600;
   color: var(--ink-strong);
@@ -647,6 +649,28 @@ code {
 
 .faq summary::-webkit-details-marker {
   display: none;
+}
+
+.faq summary::after {
+  content: "";
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(var(--ink-strong), var(--ink-strong)) center / 12px 2px no-repeat,
+    linear-gradient(var(--ink-strong), var(--ink-strong)) center / 2px 12px no-repeat,
+    #f7fafc;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.faq details[open] summary::after {
+  background:
+    linear-gradient(#fff, #fff) center / 12px 2px no-repeat,
+    var(--brand);
+  border-color: var(--brand);
 }
 
 .faq details[open] summary {
