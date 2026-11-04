@@ -629,6 +629,11 @@ code {
 
 .cta {
   padding: var(--section-gap) 0;
+  border-block: 1px solid rgba(15, 118, 110, 0.12);
+  background:
+    radial-gradient(900px 420px at 12% 20%, rgba(15, 118, 110, 0.22), transparent 58%),
+    radial-gradient(720px 380px at 92% 80%, rgba(245, 158, 11, 0.14), transparent 55%),
+    linear-gradient(160deg, #e6f3f1 0%, #eef4f8 42%, #e8eef5 100%);
 }
 
 .cta__panel {
@@ -636,12 +641,13 @@ code {
   gap: 28px;
   align-items: center;
   padding: 40px 36px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(15, 118, 110, 0.16);
   border-radius: 18px;
   background:
-    linear-gradient(135deg, rgba(15, 118, 110, 0.12), transparent 52%),
-    linear-gradient(180deg, #ffffff, #f7fafc);
+    linear-gradient(135deg, rgba(15, 118, 110, 0.1), transparent 48%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 250, 252, 0.92));
   box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(8px);
 }
 
 @media (min-width: 860px) {
