@@ -370,10 +370,10 @@ code {
   object-position: top center;
 }
 
-/* Capability strip — flush under hero */
+/* Capability strip — spaced under hero */
 .proof {
   padding: 0;
-  margin: 0;
+  margin: 90px 0 0;
 }
 
 .proof__inner {
