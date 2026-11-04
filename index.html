@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3d278a3">
+  <link rel="stylesheet" href="styles.css?v=b8bb21">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -117,38 +117,59 @@
       <div class="hero__atmosphere" aria-hidden="true"></div>
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="kicker">Magazine · Blog · Authority site</p>
+          <div class="hero__meta">
+            <p class="kicker">Magazine · Blog · Authority</p>
+            <span class="version-chip">v2.0.0</span>
+          </div>
           <h1 id="hero-title">Nexora</h1>
           <p class="hero__lede">
-            Free WordPress theme for magazines, blogs, and authority publishers.
-            SEO-friendly, fully responsive, with AdSense and affiliate monetization built in —
-            no page builder, no upsell wall.
+            A professional WordPress theme for magazines, blogs, and authority publishers.
+            SEO-friendly structure, fully responsive layout, plus AdSense and affiliate monetization —
+            free zip, no page builder.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="downloads/nexora-2.0.0-nexora.zip" download>Download nexora-2.0.0-nexora.zip</a>
             <a class="btn btn--ghost" href="#install">How to install</a>
           </div>
-          <p class="hero__trust">Latest package · AdSense slots · Affiliate CTAs · Appearance → Nexora dashboard</p>
+          <p class="hero__trust">Direct zip download · AdSense slots · Affiliate CTAs · Appearance → Nexora</p>
         </div>
-        <figure class="hero__visual">
-          <img
-            class="hero__img"
-            src="assets/hero-magazine.jpg"
-            width="1600"
-            height="900"
-            alt="Nexora magazine homepage preview — Latest, Top Reads, teal Contact"
-            fetchpriority="high"
-          >
-        </figure>
+        <div class="hero__stage">
+          <div class="device" aria-hidden="false">
+            <div class="device__chrome">
+              <span class="device__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="device__url">yoursite.com</span>
+            </div>
+            <figure class="device__screen">
+              <img
+                class="hero__img"
+                src="assets/hero-magazine.jpg"
+                width="1600"
+                height="900"
+                alt="Nexora magazine homepage preview — Latest, Top Reads, teal Contact"
+                fetchpriority="high"
+              >
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof" aria-label="What ships in Nexora">
+      <div class="wrap proof__inner">
+        <p><strong>Free zip</strong> Latest package</p>
+        <p><strong>Monetize</strong> AdSense + affiliate</p>
+        <p><strong>SEO-ready</strong> Semantic + schema helpers</p>
+        <p><strong>Responsive</strong> Mobile-first CSS</p>
+        <p><strong>Maintain</strong> Appearance → Nexora</p>
       </div>
     </section>
 
     <section class="section" id="install" aria-labelledby="install-title">
       <div class="wrap">
-        <div class="section__head">
+        <div class="section__head section__head--center">
           <p class="section__eyebrow">Get started</p>
           <h2 id="install-title">Install in minutes</h2>
-          <p>Upload the latest zip, activate, and put your Site Identity first. Beginners and operators both get a clear path.</p>
+          <p>Upload the latest zip, activate, and put your Site Identity first.</p>
         </div>
         <ol class="steps">
           <li>
@@ -161,7 +182,7 @@
           </li>
           <li>
             <h3>Set your brand</h3>
-            <p>Customizer → Site Identity for name and logo. Add menus, then open Appearance → Nexora for niche, ads, and SEO.</p>
+            <p>Customizer → Site Identity for name and logo. Then open Appearance → Nexora for niche, ads, and SEO.</p>
           </li>
         </ol>
       </div>
@@ -169,42 +190,43 @@
 
     <section class="section band" id="update" aria-labelledby="update-title">
       <div class="wrap">
-        <div class="section__head">
+        <div class="section__head section__head--center">
           <p class="section__eyebrow">Stay current</p>
           <h2 id="update-title">Update when a new zip ships</h2>
-          <p>Keep Nexora current from Theme Settings or by uploading the newest package over the active theme.</p>
+          <p>Keep Nexora current from Theme Settings or by uploading the newest package.</p>
         </div>
         <ol class="steps">
           <li>
             <h3>Grab the latest zip</h3>
-            <p>Download the current release from this site — filename starts with <code>nexora-</code> and matches the version on Appearance → Nexora → Overview.</p>
+            <p>Download from this site — filename starts with <code>nexora-</code> and matches Appearance → Nexora → Overview.</p>
           </li>
           <li>
-            <h3>Check from Theme Settings</h3>
-            <p>Appearance → Nexora → Overview → Check GitHub updates now (token under Advanced / wp-config when using the private update channel).</p>
+            <h3>Check Theme Settings</h3>
+            <p>Overview → Check GitHub updates now (token under Advanced / wp-config for the private update channel).</p>
           </li>
           <li>
             <h3>Apply the update</h3>
-            <p>Appearance → Themes → Update, or upload the new zip. Site Identity, posts, and menus stay yours.</p>
+            <p>Appearance → Themes → Update, or upload the new zip. Site Identity and content stay yours.</p>
           </li>
         </ol>
-        <p class="section__note">
-          Current download: <a class="btn btn--primary btn--sm" href="downloads/nexora-2.0.0-nexora.zip" download>nexora-2.0.0-nexora.zip</a>
-        </p>
+        <div class="section__note">
+          <span>Current package</span>
+          <a class="btn btn--primary btn--sm" href="downloads/nexora-2.0.0-nexora.zip" download>nexora-2.0.0-nexora.zip</a>
+        </div>
       </div>
     </section>
 
     <section class="section" id="features" aria-labelledby="features-title">
       <div class="wrap">
-        <div class="section__head">
+        <div class="section__head section__head--center">
           <p class="section__eyebrow">Full package</p>
           <h2 id="features-title">Features that ship free</h2>
-          <p>Magazine grids, authority blog singles, monetization, and maintenance — in one lightweight theme.</p>
+          <p>Magazine grids, authority blog singles, monetization, and maintenance — one lightweight theme.</p>
         </div>
         <div class="rail rail--features">
           <article>
             <h3>Magazine &amp; authority blog</h3>
-            <p>Editorial homepage with Latest, Top Reads, and category browse — structured for magazines, niche blogs, and authority publishers.</p>
+            <p>Editorial homepage with Latest, Top Reads, and category browse — for magazines, niche blogs, and authority publishers.</p>
           </article>
           <article>
             <h3>AdSense monetization</h3>
@@ -212,7 +234,7 @@
           </article>
           <article>
             <h3>Affiliate monetization</h3>
-            <p>Affiliate CTAs, Amazon tag support, and disclosure-ready footers so revenue tools stay organized and policy-aware.</p>
+            <p>Affiliate CTAs, Amazon tag support, and disclosure-ready footers so revenue stays organized and policy-aware.</p>
           </article>
           <article>
             <h3>SEO-friendly structure</h3>
@@ -224,7 +246,7 @@
           </article>
           <article>
             <h3>Easy Theme Settings</h3>
-            <p>Appearance → Nexora centralizes niche colors, branding, ads, affiliate, SEO, privacy, and updates — no page builder required.</p>
+            <p>Appearance → Nexora centralizes niche colors, branding, ads, affiliate, SEO, privacy, and updates — no page builder.</p>
           </article>
         </div>
       </div>
@@ -232,39 +254,65 @@
 
     <section class="section band" id="why" aria-labelledby="why-title">
       <div class="wrap">
-        <div class="section__head">
-          <p class="section__eyebrow">Why Nexora</p>
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow">Product detail</p>
           <h2 id="why-title">Built for real publishers</h2>
           <p>Your brand leads. Monetization stays tidy. The article shell matches what you install.</p>
         </div>
-        <div class="split">
-          <figure class="media">
-            <img src="assets/article-layout.jpg" width="1600" height="900" alt="Nexora single post — TOC rail, reading column, right ad rail" loading="lazy">
-          </figure>
-          <ul class="point-list">
-            <li>
-              <h3>Dual-rail singles</h3>
-              <p>Centered title and featured image, then left TOC, reading column, and optional right ad slots — the real Nexora article shell.</p>
-            </li>
-            <li>
-              <h3>Revenue without chaos</h3>
-              <p>AdSense and affiliate tools live in Theme Settings with disclosure support, so monetization does not fight the reading experience.</p>
-            </li>
-            <li>
-              <h3>Your brand, not ours</h3>
-              <p>Change site name, logo, and niche colors anytime. Nexora never hardcodes another publisher’s identity into your install.</p>
-            </li>
-          </ul>
+
+        <div class="feature-row">
+          <div class="feature-row__copy">
+            <p class="section__eyebrow">Single layout</p>
+            <h3>Dual-rail article shell</h3>
+            <p>Centered title and featured image, then left TOC, reading column, and optional right ad slots — the real Nexora single.</p>
+            <ul class="tick-list">
+              <li>Readable first screen for people and search</li>
+              <li>AdSense rails without fighting the story</li>
+              <li>Site Identity branding you control</li>
+            </ul>
+          </div>
+          <div class="feature-row__media">
+            <div class="device device--soft">
+              <div class="device__chrome">
+                <span class="device__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="device__url">Single post</span>
+              </div>
+              <figure class="device__screen">
+                <img src="assets/article-layout.jpg" width="1600" height="900" alt="Nexora single post — TOC rail, reading column, right ad rail" loading="lazy">
+              </figure>
+            </div>
+          </div>
         </div>
-        <figure class="media media--wide media--admin">
-          <img src="assets/admin-dashboard.jpg?v=7bee1c6" width="1600" height="1132" alt="Appearance → Nexora Overview — theme version, niche, updates, ads, SEO" loading="lazy">
-        </figure>
+
+        <div class="feature-row feature-row--flip">
+          <div class="feature-row__copy">
+            <p class="section__eyebrow">Theme Settings</p>
+            <h3>Organized operator dashboard</h3>
+            <p>Appearance → Nexora keeps niche, branding, ads, affiliate, SEO, privacy, and updates in one place — high-authority control without chaos.</p>
+            <ul class="tick-list">
+              <li>Overview status for version, niche, ads, SEO</li>
+              <li>GitHub update check when configured</li>
+              <li>No upsell wall for core features</li>
+            </ul>
+          </div>
+          <div class="feature-row__media">
+            <div class="device device--soft">
+              <div class="device__chrome">
+                <span class="device__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="device__url">Appearance → Nexora</span>
+              </div>
+              <figure class="device__screen">
+                <img src="assets/admin-dashboard.jpg?v=7bee1c6" width="1600" height="1132" alt="Appearance → Nexora Overview — theme version, niche, updates, ads, SEO" loading="lazy">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="wrap">
-        <div class="section__head">
+      <div class="wrap wrap--narrow">
+        <div class="section__head section__head--center">
           <p class="section__eyebrow">FAQ</p>
           <h2 id="faq-title">Straight answers</h2>
           <p>For people comparing free WordPress magazine, blog, and authority themes.</p>
@@ -291,12 +339,17 @@
     </section>
 
     <section class="section cta" aria-labelledby="cta-title">
-      <div class="wrap cta__inner">
-        <h2 id="cta-title">Download the latest Nexora zip</h2>
-        <p>Magazine. Blog. Authority. AdSense + affiliate ready. Start with version <strong>2.0.0-nexora</strong>.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="downloads/nexora-2.0.0-nexora.zip" download>Download nexora-2.0.0-nexora.zip</a>
-          <a class="btn btn--ghost" href="#install">Installation steps</a>
+      <div class="wrap">
+        <div class="cta__panel">
+          <div class="cta__copy">
+            <p class="section__eyebrow">Latest package</p>
+            <h2 id="cta-title">Download Nexora 2.0.0</h2>
+            <p>Magazine. Blog. Authority. AdSense + affiliate ready — start with <code>nexora-2.0.0-nexora.zip</code>.</p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="downloads/nexora-2.0.0-nexora.zip" download>Download zip</a>
+            <a class="btn btn--ghost" href="#install">Installation steps</a>
+          </div>
         </div>
       </div>
     </section>
@@ -318,7 +371,7 @@
   <script>
     document.getElementById('y').textContent = String(new Date().getFullYear());
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.section, .rail article, .point-list li, .faq details, .steps li').forEach(function (el, i) {
+      document.querySelectorAll('.section, .rail article, .steps li, .feature-row, .faq details, .proof').forEach(function (el, i) {
         el.style.setProperty('--d', (i % 6) * 40 + 'ms');
         el.classList.add('reveal');
       });
