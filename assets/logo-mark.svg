@@ -5,10 +5,7 @@
       <stop offset="1" stop-color="#115E59"/>
     </linearGradient>
   </defs>
-  <!-- Rounded tile -->
   <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#nx)"/>
-  <!-- Abstract N / magazine columns -->
   <path fill="#FFFFFF" d="M18 44V20h7.2l10.4 14.8V20H46v24h-7.2L28.4 29.2V44H18z"/>
-  <!-- Editorial accent rule -->
   <rect x="18" y="47" width="28" height="3" rx="1.5" fill="#F59E0B"/>
 </svg>
