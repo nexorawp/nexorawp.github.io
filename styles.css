@@ -236,6 +236,15 @@ code {
   animation: rise 0.7s ease 0.16s both;
 }
 
+.hero__trust {
+  margin: 16px 0 0;
+  max-width: 52ch;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  animation: rise 0.7s ease 0.22s both;
+}
+
 .hero__visual {
   position: relative;
   z-index: 1;
@@ -356,9 +365,61 @@ code {
   }
 }
 
+@media (min-width: 800px) {
+  .rail--features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .rail--features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .rail article {
   padding-top: 16px;
   border-top: 2px solid var(--brand);
+}
+
+.faq {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.faq details {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 4px 20px 4px;
+  box-shadow: var(--shadow);
+}
+
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink-strong);
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq details[open] summary {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.faq details p {
+  margin: 0 0 16px;
+  color: var(--muted);
 }
 
 .steps {
