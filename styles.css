@@ -298,11 +298,10 @@ code {
 .hero__stage::before {
   content: "";
   position: absolute;
-  inset: 12% -4% -8% 8%;
+  inset: 18% 0% -6% 12%;
   background:
-    radial-gradient(closest-side, rgba(15, 118, 110, 0.22), transparent 72%),
-    radial-gradient(closest-side at 70% 40%, rgba(245, 158, 11, 0.14), transparent 70%);
-  filter: blur(8px);
+    radial-gradient(closest-side, rgba(15, 118, 110, 0.16), transparent 72%),
+    radial-gradient(closest-side at 70% 40%, rgba(245, 158, 11, 0.1), transparent 70%);
   z-index: 0;
   pointer-events: none;
 }
@@ -367,9 +366,12 @@ code {
 .device__screen img,
 .hero__img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  object-fit: contain;
   object-position: top center;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Capability strip — section gap under hero */
