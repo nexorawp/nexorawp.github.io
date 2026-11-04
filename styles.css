@@ -213,7 +213,7 @@ code {
   gap: 40px;
   align-items: center;
   padding-top: var(--section-gap);
-  padding-bottom: 0;
+  padding-bottom: var(--section-gap);
 }
 
 @media (min-width: 980px) {
@@ -725,7 +725,7 @@ code {
 
   .hero__grid {
     padding-top: var(--section-gap);
-    padding-bottom: 0;
+    padding-bottom: var(--section-gap);
   }
 
   .hero h1 {
