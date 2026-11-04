@@ -294,64 +294,19 @@ code {
   animation: rise 0.85s ease 0.12s both;
 }
 
-/* Device / browser frame — ThemeForest-style product staging */
-.device {
+/* Product shot — single image, no nested browser chrome (avoids double-frame look) */
+.shot {
   position: relative;
   z-index: 1;
+  margin: 0;
   border-radius: 16px;
   border: 1px solid rgba(215, 222, 232, 0.95);
-  background: #f7fafc;
-  box-shadow: var(--shadow-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
-.device--soft {
-  box-shadow: var(--shadow);
-}
-
-.device__chrome {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 40px;
-  padding: 0 14px;
-  background: linear-gradient(180deg, #fbfcfe, #eef2f7);
-  border-bottom: 1px solid var(--line);
-}
-
-.device__dots {
-  display: inline-flex;
-  gap: 6px;
-}
-
-.device__dots i {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #c9d2dc;
-  display: block;
-}
-
-.device__url {
-  flex: 1;
-  min-height: 26px;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 12px;
-  border-radius: 8px;
-  border: 1px solid #dde4ec;
-  background: #fff;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.device__screen {
-  margin: 0;
-  background: var(--surface);
-}
-
-.device__screen img,
+.shot img,
 .hero__img {
   width: 100%;
   height: auto;
