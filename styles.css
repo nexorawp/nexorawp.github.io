@@ -212,13 +212,14 @@ code {
   grid-template-columns: 1fr;
   gap: 40px;
   align-items: center;
+  padding-bottom: 32px;
 }
 
 @media (min-width: 980px) {
   .hero__grid {
     grid-template-columns: minmax(300px, 0.88fr) minmax(360px, 1.12fr);
     gap: 48px;
-    padding-bottom: 0;
+    padding-bottom: 32px;
   }
 }
 
