@@ -313,10 +313,10 @@ code {
   display: block;
 }
 
-/* Capability strip — section gap under hero */
+/* Capability strip — sits in hero bottom padding rhythm */
 .proof {
   padding: 0;
-  margin: var(--section-gap) 0 0;
+  margin: 0;
 }
 
 .proof__inner {
