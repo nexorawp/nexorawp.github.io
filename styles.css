@@ -191,7 +191,7 @@ code {
 /* —— Hero —— */
 .hero {
   position: relative;
-  padding: var(--section-gap) 0;
+  padding: 0;
   overflow: clip;
 }
 
@@ -212,12 +212,16 @@ code {
   grid-template-columns: 1fr;
   gap: 40px;
   align-items: center;
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
 }
 
 @media (min-width: 980px) {
   .hero__grid {
     grid-template-columns: minmax(300px, 0.88fr) minmax(360px, 1.12fr);
     gap: 48px;
+    padding-top: var(--section-gap);
+    padding-bottom: var(--section-gap);
   }
 }
 
@@ -718,7 +722,12 @@ code {
   }
 
   .hero {
-    padding: var(--section-gap) 0;
+    padding: 0;
+  }
+
+  .hero__grid {
+    padding-top: var(--section-gap);
+    padding-bottom: var(--section-gap);
   }
 
   .hero h1 {
