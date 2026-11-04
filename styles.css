@@ -213,15 +213,13 @@ code {
   gap: 40px;
   align-items: center;
   padding-top: var(--section-gap);
-  padding-bottom: var(--section-gap);
+  padding-bottom: 0;
 }
 
 @media (min-width: 980px) {
   .hero__grid {
     grid-template-columns: minmax(300px, 0.88fr) minmax(360px, 1.12fr);
     gap: 48px;
-    padding-top: var(--section-gap);
-    padding-bottom: var(--section-gap);
   }
 }
 
@@ -317,10 +315,10 @@ code {
   display: block;
 }
 
-/* Capability strip — sits in hero bottom padding rhythm */
+/* Capability strip */
 .proof {
   padding: 0;
-  margin: 0;
+  margin: var(--section-gap) 0 0;
 }
 
 .proof__inner {
@@ -727,7 +725,7 @@ code {
 
   .hero__grid {
     padding-top: var(--section-gap);
-    padding-bottom: var(--section-gap);
+    padding-bottom: 0;
   }
 
   .hero h1 {
