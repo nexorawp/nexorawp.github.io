@@ -424,10 +424,6 @@ code {
   text-align: center;
 }
 
-.section__head--center p {
-  margin-inline: auto;
-}
-
 .section__head .section__eyebrow {
   margin-bottom: 12px;
 }
@@ -446,6 +442,14 @@ code {
   margin: 0;
   color: var(--muted);
   max-width: 48ch;
+}
+
+.section__head--center .section__eyebrow,
+.section__head--center h2,
+.section__head--center p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .section__note {
