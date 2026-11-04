@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nexora — Universal WordPress magazine theme</title>
-  <meta name="description" content="Nexora is a lightweight WordPress magazine theme: niche color presets, AdSense, affiliate tools, and GitHub-based updates. No page builder.">
+  <meta name="description" content="Nexora is a high-authority WordPress magazine theme: editorial layout, niche color presets, AdSense, affiliate tools, and GitHub Releases updates. No page builder.">
   <meta property="og:title" content="Nexora — Universal WordPress magazine theme">
-  <meta property="og:description" content="Magazine layout, niche colors only, AdSense + affiliate ready. Updates from GitHub Releases.">
+  <meta property="og:description" content="Magazine-first WordPress theme. Niche colors, revenue tools, one-click updates from GitHub Releases.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/logo-mark-112.png">
+  <meta property="og:image" content="assets/hero-magazine.jpg">
   <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,103 +16,134 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap site-header__inner">
       <a class="brand" href="./">
         <img src="assets/logo-mark.svg" width="28" height="28" alt="">
-        Nexora
+        <span>Nexora</span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#features">Features</a>
+        <a href="#product">Product</a>
+        <a href="#system">System</a>
         <a href="#updates">Updates</a>
-        <a href="https://paulworld.site/" target="_blank" rel="noopener noreferrer">Live demo</a>
-        <a class="btn btn--primary" href="https://github.com/sanjaypaul-777/nexora" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn--primary btn--sm" href="https://github.com/sanjaypaul-777/nexora/releases" target="_blank" rel="noopener noreferrer">Get Nexora</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap hero__grid">
-        <div>
-          <p class="kicker">WordPress magazine theme</p>
-          <h1>Nexora</h1>
-          <p class="hero__lede">
-            A lean classic theme for niche magazines — colors switch with the niche,
-            layout stays editorial. AdSense, affiliate cards, SEO handoff to Yoast, and one-click updates from GitHub Releases.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="https://paulworld.site/" target="_blank" rel="noopener noreferrer">See live demo</a>
-            <a class="btn btn--ghost" href="#updates">How updates work</a>
-          </div>
-        </div>
-        <aside class="hero__panel" aria-labelledby="install-title">
-          <h2 id="install-title">Install in minutes</h2>
-          <p>Upload the theme zip, activate Nexora, then set Site Identity and your menus.</p>
-          <ol>
-            <li>Install <code>nexora/</code> under <code>wp-content/themes/</code></li>
-            <li>Activate under Appearance → Themes</li>
-            <li>Paste your update token under Appearance → Nexora → Advanced</li>
-          </ol>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="features">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Built for operators, not page builders</h2>
-          <p>No jQuery from the theme. No fake stats. Magazine first — Paul World on paulworld.site is the reference live site.</p>
-        </div>
-        <div class="feature-list">
-          <article class="feature">
-            <h3>Magazine layout</h3>
-            <p>Latest posts homepage, dual-rail singles, TOC, share, and category browse that stay readable on phone and desktop.</p>
-          </article>
-          <article class="feature">
-            <h3>Niche = colors</h3>
-            <p>Presets change presentation tokens only. Posts, SEO, ads, and site name stay untouched when you switch niches.</p>
-          </article>
-          <article class="feature">
-            <h3>Revenue ready</h3>
-            <p>AdSense slots, affiliate CTAs, disclosure footer, and optional GSC / Bing verification fields under Nexora → SEO.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section band" id="updates">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Updates without a license server</h2>
-          <p>Releases ship as <code>nexora-*.zip</code> on GitHub. Your purchase email includes the private-repo token — paste it in the theme; no extra VPS required.</p>
-        </div>
-        <div class="steps">
-          <article class="step">
-            <h3>Get the token</h3>
-            <p>Copy the GitHub update token from your Nexora purchase / license email. A random PAT you invent will not see the private repo.</p>
-          </article>
-          <article class="step">
-            <h3>Paste in WordPress</h3>
-            <p>Appearance → Nexora → Advanced → paste token → Save. Optional: the same value as <code>NEXORA_GITHUB_TOKEN</code> in wp-config.php.</p>
-          </article>
-          <article class="step">
-            <h3>Update when ready</h3>
-            <p>Check GitHub updates in Advanced, then Appearance → Themes → Update when a newer release exists.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section__head">
-          <h2>Start with the live magazine</h2>
-          <p>paulworld.site runs Nexora in production. Use it to judge speed, layout, and editorial tone before you install.</p>
-        </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__atmosphere" aria-hidden="true"></div>
+      <div class="wrap hero__copy">
+        <p class="kicker">WordPress magazine theme</p>
+        <h1 id="hero-title">Nexora</h1>
+        <p class="hero__lede">
+          Editorial authority without the page-builder tax. Niche colors, dual-rail articles,
+          AdSense and affiliate tools — shipped as a lean classic theme.
+        </p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="https://paulworld.site/" target="_blank" rel="noopener noreferrer">Open paulworld.site</a>
-          <a class="btn btn--ghost" href="https://github.com/sanjaypaul-777/nexora/releases" target="_blank" rel="noopener noreferrer">View releases</a>
+          <a class="btn btn--primary" href="https://github.com/sanjaypaul-777/nexora/releases" target="_blank" rel="noopener noreferrer">View releases</a>
+          <a class="btn btn--ghost" href="#product">See the system</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img
+          class="hero__img"
+          src="assets/hero-magazine.jpg"
+          width="1600"
+          height="900"
+          alt="Nexora magazine homepage layout in a browser window"
+          fetchpriority="high"
+        >
+      </div>
+    </section>
+
+    <section class="section section--tight" id="product" aria-labelledby="product-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="product-title">Built like a product, not a template dump</h2>
+          <p>One composition language across homepage, singles, and archives. Operators get speed and structure — readers get a magazine that feels intentional.</p>
+        </div>
+        <div class="split">
+          <figure class="media">
+            <img src="assets/article-layout.jpg" width="1600" height="900" alt="Nexora single article dual-rail layout" loading="lazy">
+          </figure>
+          <ul class="point-list">
+            <li>
+              <h3>Magazine chassis</h3>
+              <p>Latest, Top Reads, Popular, Explore, and All Articles — readable on phone and desktop without a builder.</p>
+            </li>
+            <li>
+              <h3>Dual-rail singles</h3>
+              <p>TOC, share, related topics, and optional ad slots that stay out of the first viewport.</p>
+            </li>
+            <li>
+              <h3>Honest chrome</h3>
+              <p>Site Identity owns your brand. Nexora is the theme — never a hard-coded publisher name.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="system" aria-labelledby="system-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="system-title">Organized where it matters</h2>
+          <p>Appearance → Nexora keeps niche, branding, ads, affiliate, SEO, and updates in one controlled dashboard.</p>
+        </div>
+        <figure class="media media--wide">
+          <img src="assets/admin-dashboard.jpg" width="1600" height="900" alt="Nexora theme settings dashboard" loading="lazy">
+        </figure>
+        <div class="rail">
+          <article>
+            <h3>Niche = colors</h3>
+            <p>Presets retoken presentation only. Posts, SEO, and site name stay untouched.</p>
+          </article>
+          <article>
+            <h3>Revenue ready</h3>
+            <p>AdSense placements, affiliate CTAs, disclosure footer, optional GSC / Bing / GA fields.</p>
+          </article>
+          <article>
+            <h3>SEO handoff</h3>
+            <p>Theme helpers when needed; prefer Yoast or Rank Math in production.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="updates" aria-labelledby="updates-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="updates-title">Updates without a license server</h2>
+          <p>Private GitHub Releases ship <code>nexora-*.zip</code>. Paste your purchase token once — then update from Appearance → Themes.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Receive the token</h3>
+            <p>Your Nexora purchase email includes the private-repo update token.</p>
+          </li>
+          <li>
+            <h3>Paste in WordPress</h3>
+            <p>Appearance → Nexora → Advanced → Save. Optional: <code>NEXORA_GITHUB_TOKEN</code> in wp-config.</p>
+          </li>
+          <li>
+            <h3>Ship when ready</h3>
+            <p>Check for updates, then install the newer release like any other theme.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="wrap cta__inner">
+        <h2 id="cta-title">Install Nexora. Own the magazine.</h2>
+        <p>Lean PHP, Instrument Sans, teal system tokens, no theme jQuery, no homepage pricing table.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://github.com/sanjaypaul-777/nexora/releases" target="_blank" rel="noopener noreferrer">Open releases</a>
+          <a class="btn btn--ghost" href="https://github.com/sanjaypaul-777/nexora" target="_blank" rel="noopener noreferrer">View repository</a>
         </div>
       </div>
     </section>
@@ -120,16 +151,32 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <p>© <span id="y"></span> Nexora · Operator Sanjay Paul</p>
+      <p>© <span id="y"></span> Nexora</p>
       <p>
-        <a href="https://github.com/sanjaypaul-777/nexora" target="_blank" rel="noopener noreferrer">Repository</a>
+        <a href="https://github.com/sanjaypaul-777/nexora" target="_blank" rel="noopener noreferrer">GitHub</a>
         ·
-        <a href="mailto:contact@paulworld.site">contact@paulworld.site</a>
+        <a href="https://github.com/sanjaypaul-777/nexora/releases" target="_blank" rel="noopener noreferrer">Releases</a>
       </p>
     </div>
   </footer>
+
   <script>
     document.getElementById('y').textContent = String(new Date().getFullYear());
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.section, .rail article, .point-list li').forEach(function (el, i) {
+        el.style.setProperty('--d', (i % 6) * 40 + 'ms');
+        el.classList.add('reveal');
+      });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    }
   </script>
 </body>
 </html>
