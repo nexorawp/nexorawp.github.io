@@ -290,18 +290,8 @@ code {
 
 .hero__stage {
   position: relative;
+  /* opacity-only — transform on this parent GPU-ghosts the preview image */
   animation: rise 0.85s ease 0.12s both;
-}
-
-.hero__stage::before {
-  content: "";
-  position: absolute;
-  inset: 18% 0% -6% 12%;
-  background:
-    radial-gradient(closest-side, rgba(15, 118, 110, 0.16), transparent 72%),
-    radial-gradient(closest-side at 70% 40%, rgba(245, 158, 11, 0.1), transparent 70%);
-  z-index: 0;
-  pointer-events: none;
 }
 
 /* Device / browser frame — ThemeForest-style product staging */
@@ -366,10 +356,6 @@ code {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
-  object-position: top center;
-  image-rendering: auto;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* Capability strip — section gap under hero */
@@ -747,24 +733,16 @@ code {
 
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease var(--d, 0ms), transform 0.6s ease var(--d, 0ms);
+  transition: opacity 0.6s ease var(--d, 0ms);
 }
 
 .reveal.is-in {
   opacity: 1;
-  transform: none;
 }
 
 @keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @media (max-width: 900px) {
@@ -818,6 +796,5 @@ code {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
-    transform: none !important;
   }
 }
